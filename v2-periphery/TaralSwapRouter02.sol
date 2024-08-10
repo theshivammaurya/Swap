@@ -1,8 +1,8 @@
 pragma solidity =0.6.6;
 
-import '@uniswap/v2-core/contracts/interfaces/IUniswapV2Factory.sol';
-import '@uniswap/lib/contracts/libraries/TransferHelper.sol';
+import 'https://github.com/theshivammaurya/Swap/blob/master/v2-core/interfaces/ITaralSwapV2Factory.sol';
 
+import './libraries/TransferHelper.sol';
 import './interfaces/ITaralSwapRouter02.sol';
 import './libraries/TaralSwapLibrary.sol';
 import './libraries/SafeMath.sol';
@@ -39,8 +39,8 @@ contract TaralSwapRouter02 is ITaralSwapRouter02 {
         uint amountBMin
     ) internal virtual returns (uint amountA, uint amountB) {
         // create the pair if it doesn't exist yet
-        if (IUniswapV2Factory(factory).getPair(tokenA, tokenB) == address(0)) {
-            IUniswapV2Factory(factory).createPair(tokenA, tokenB);
+        if (ITaralSwapV2Factory(factory).getPair(tokenA, tokenB) == address(0)) {
+            ITaralSwapV2Factory(factory).createPair(tokenA, tokenB);
         }
         (uint reserveA, uint reserveB) = TaralSwapLibrary.getReserves(factory, tokenA, tokenB);
         if (reserveA == 0 && reserveB == 0) {
@@ -72,7 +72,7 @@ contract TaralSwapRouter02 is ITaralSwapRouter02 {
         address pair = TaralSwapLibrary.pairFor(factory, tokenA, tokenB);
         TransferHelper.safeTransferFrom(tokenA, msg.sender, pair, amountA);
         TransferHelper.safeTransferFrom(tokenB, msg.sender, pair, amountB);
-        liquidity = IUniswapV2Pair(pair).mint(to);
+        liquidity = ITaralSwapV2Pair(pair).mint(to);
     }
     function addLiquidityETH(
         address token,
@@ -94,7 +94,7 @@ contract TaralSwapRouter02 is ITaralSwapRouter02 {
         TransferHelper.safeTransferFrom(token, msg.sender, pair, amountToken);
         IWTARAL(WTARAL).deposit{value: amountETH}();
         assert(IWTARAL(WTARAL).transfer(pair, amountETH));
-        liquidity = IUniswapV2Pair(pair).mint(to);
+        liquidity = ITaralSwapV2Pair(pair).mint(to);
         // refund dust eth, if any
         if (msg.value > amountETH) TransferHelper.safeTransferETH(msg.sender, msg.value - amountETH);
     }
@@ -110,8 +110,8 @@ contract TaralSwapRouter02 is ITaralSwapRouter02 {
         uint deadline
     ) public virtual override ensure(deadline) returns (uint amountA, uint amountB) {
         address pair = TaralSwapLibrary.pairFor(factory, tokenA, tokenB);
-        IUniswapV2Pair(pair).transferFrom(msg.sender, pair, liquidity); // send liquidity to pair
-        (uint amount0, uint amount1) = IUniswapV2Pair(pair).burn(to);
+        ITaralSwapV2Pair(pair).transferFrom(msg.sender, pair, liquidity); // send liquidity to pair
+        (uint amount0, uint amount1) = ITaralSwapV2Pair(pair).burn(to);
         (address token0,) = TaralSwapLibrary.sortTokens(tokenA, tokenB);
         (amountA, amountB) = tokenA == token0 ? (amount0, amount1) : (amount1, amount0);
         require(amountA >= amountAMin, 'TaralSwapRouter: INSUFFICIENT_A_AMOUNT');
@@ -150,7 +150,7 @@ contract TaralSwapRouter02 is ITaralSwapRouter02 {
     ) external virtual override returns (uint amountA, uint amountB) {
         address pair = TaralSwapLibrary.pairFor(factory, tokenA, tokenB);
         uint value = approveMax ? uint(-1) : liquidity;
-        IUniswapV2Pair(pair).permit(msg.sender, address(this), value, deadline, v, r, s);
+        ITaralSwapV2Pair(pair).permit(msg.sender, address(this), value, deadline, v, r, s);
         (amountA, amountB) = removeLiquidity(tokenA, tokenB, liquidity, amountAMin, amountBMin, to, deadline);
     }
     function removeLiquidityETHWithPermit(
@@ -164,7 +164,7 @@ contract TaralSwapRouter02 is ITaralSwapRouter02 {
     ) external virtual override returns (uint amountToken, uint amountETH) {
         address pair = TaralSwapLibrary.pairFor(factory, token, WTARAL);
         uint value = approveMax ? uint(-1) : liquidity;
-        IUniswapV2Pair(pair).permit(msg.sender, address(this), value, deadline, v, r, s);
+        ITaralSwapV2Pair(pair).permit(msg.sender, address(this), value, deadline, v, r, s);
         (amountToken, amountETH) = removeLiquidityETH(token, liquidity, amountTokenMin, amountETHMin, to, deadline);
     }
 
@@ -201,7 +201,7 @@ contract TaralSwapRouter02 is ITaralSwapRouter02 {
     ) external virtual override returns (uint amountETH) {
         address pair = TaralSwapLibrary.pairFor(factory, token, WTARAL);
         uint value = approveMax ? uint(-1) : liquidity;
-        IUniswapV2Pair(pair).permit(msg.sender, address(this), value, deadline, v, r, s);
+        ITaralSwapV2Pair(pair).permit(msg.sender, address(this), value, deadline, v, r, s);
         amountETH = removeLiquidityETHSupportingFeeOnTransferTokens(
             token, liquidity, amountTokenMin, amountETHMin, to, deadline
         );
@@ -216,7 +216,7 @@ contract TaralSwapRouter02 is ITaralSwapRouter02 {
             uint amountOut = amounts[i + 1];
             (uint amount0Out, uint amount1Out) = input == token0 ? (uint(0), amountOut) : (amountOut, uint(0));
             address to = i < path.length - 2 ? TaralSwapLibrary.pairFor(factory, output, path[i + 2]) : _to;
-            IUniswapV2Pair(TaralSwapLibrary.pairFor(factory, input, output)).swap(
+            ITaralSwapV2Pair(TaralSwapLibrary.pairFor(factory, input, output)).swap(
                 amount0Out, amount1Out, to, new bytes(0)
             );
         }
@@ -322,7 +322,7 @@ contract TaralSwapRouter02 is ITaralSwapRouter02 {
         for (uint i; i < path.length - 1; i++) {
             (address input, address output) = (path[i], path[i + 1]);
             (address token0,) = TaralSwapLibrary.sortTokens(input, output);
-            IUniswapV2Pair pair = IUniswapV2Pair(TaralSwapLibrary.pairFor(factory, input, output));
+            ITaralSwapV2Pair pair = ITaralSwapV2Pair(TaralSwapLibrary.pairFor(factory, input, output));
             uint amountInput;
             uint amountOutput;
             { // scope to avoid stack too deep errors

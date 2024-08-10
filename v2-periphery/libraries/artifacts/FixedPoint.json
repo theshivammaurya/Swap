@@ -1,0 +1,103 @@
+{
+	"deploy": {
+		"VM:-": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		},
+		"main:1": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		},
+		"ropsten:3": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		},
+		"rinkeby:4": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		},
+		"kovan:42": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		},
+		"goerli:5": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		},
+		"Custom": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		}
+	},
+	"data": {
+		"bytecode": {
+			"linkReferences": {},
+			"object": "60b9610025600b82828239805160001a60731461001857fe5b30600052607381538281f3fe7300000000000000000000000000000000000000003014608060405260043610603d5760003560e01c80633bf7a83e146042578063552f888a14605a575b600080fd5b60486076565b60408051918252519081900360200190f35b6060607e565b6040805160ff9092168252519081900360200190f35b600160701b81565b60708156fea2646970667358221220233f477baa4a1705d700d9ae71acf1de1a53959c75f357394c3f50e2c67052e764736f6c63430006060033",
+			"opcodes": "PUSH1 0xB9 PUSH2 0x25 PUSH1 0xB DUP3 DUP3 DUP3 CODECOPY DUP1 MLOAD PUSH1 0x0 BYTE PUSH1 0x73 EQ PUSH2 0x18 JUMPI INVALID JUMPDEST ADDRESS PUSH1 0x0 MSTORE PUSH1 0x73 DUP2 MSTORE8 DUP3 DUP2 RETURN INVALID PUSH20 0x0 ADDRESS EQ PUSH1 0x80 PUSH1 0x40 MSTORE PUSH1 0x4 CALLDATASIZE LT PUSH1 0x3D JUMPI PUSH1 0x0 CALLDATALOAD PUSH1 0xE0 SHR DUP1 PUSH4 0x3BF7A83E EQ PUSH1 0x42 JUMPI DUP1 PUSH4 0x552F888A EQ PUSH1 0x5A JUMPI JUMPDEST PUSH1 0x0 DUP1 REVERT JUMPDEST PUSH1 0x48 PUSH1 0x76 JUMP JUMPDEST PUSH1 0x40 DUP1 MLOAD SWAP2 DUP3 MSTORE MLOAD SWAP1 DUP2 SWAP1 SUB PUSH1 0x20 ADD SWAP1 RETURN JUMPDEST PUSH1 0x60 PUSH1 0x7E JUMP JUMPDEST PUSH1 0x40 DUP1 MLOAD PUSH1 0xFF SWAP1 SWAP3 AND DUP3 MSTORE MLOAD SWAP1 DUP2 SWAP1 SUB PUSH1 0x20 ADD SWAP1 RETURN JUMPDEST PUSH1 0x1 PUSH1 0x70 SHL DUP2 JUMP JUMPDEST PUSH1 0x70 DUP2 JUMP INVALID LOG2 PUSH5 0x6970667358 0x22 SLT KECCAK256 0x23 EXTCODEHASH SELFBALANCE PUSH28 0xAA4A1705D700D9AE71ACF1DE1A53959C75F357394C3F50E2C67052E7 PUSH5 0x736F6C6343 STOP MOD MOD STOP CALLER ",
+			"sourceMap": "251:5884:2:-:0;;132:2:-1;166:7;155:9;146:7;137:37;255:7;249:14;246:1;241:23;235:4;232:33;222:2;;269:9;222:2;293:9;290:1;283:20;323:4;314:7;306:22;347:7;338;331:24"
+		},
+		"deployedBytecode": {
+			"immutableReferences": {},
+			"linkReferences": {},
+			"object": "7300000000000000000000000000000000000000003014608060405260043610603d5760003560e01c80633bf7a83e146042578063552f888a14605a575b600080fd5b60486076565b60408051918252519081900360200190f35b6060607e565b6040805160ff9092168252519081900360200190f35b600160701b81565b60708156fea2646970667358221220233f477baa4a1705d700d9ae71acf1de1a53959c75f357394c3f50e2c67052e764736f6c63430006060033",
+			"opcodes": "PUSH20 0x0 ADDRESS EQ PUSH1 0x80 PUSH1 0x40 MSTORE PUSH1 0x4 CALLDATASIZE LT PUSH1 0x3D JUMPI PUSH1 0x0 CALLDATALOAD PUSH1 0xE0 SHR DUP1 PUSH4 0x3BF7A83E EQ PUSH1 0x42 JUMPI DUP1 PUSH4 0x552F888A EQ PUSH1 0x5A JUMPI JUMPDEST PUSH1 0x0 DUP1 REVERT JUMPDEST PUSH1 0x48 PUSH1 0x76 JUMP JUMPDEST PUSH1 0x40 DUP1 MLOAD SWAP2 DUP3 MSTORE MLOAD SWAP1 DUP2 SWAP1 SUB PUSH1 0x20 ADD SWAP1 RETURN JUMPDEST PUSH1 0x60 PUSH1 0x7E JUMP JUMPDEST PUSH1 0x40 DUP1 MLOAD PUSH1 0xFF SWAP1 SWAP3 AND DUP3 MSTORE MLOAD SWAP1 DUP2 SWAP1 SUB PUSH1 0x20 ADD SWAP1 RETURN JUMPDEST PUSH1 0x1 PUSH1 0x70 SHL DUP2 JUMP JUMPDEST PUSH1 0x70 DUP2 JUMP INVALID LOG2 PUSH5 0x6970667358 0x22 SLT KECCAK256 0x23 EXTCODEHASH SELFBALANCE PUSH28 0xAA4A1705D700D9AE71ACF1DE1A53959C75F357394C3F50E2C67052E7 PUSH5 0x736F6C6343 STOP MOD MOD STOP CALLER ",
+			"sourceMap": "251:5884:2:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;12:1:-1;9;2:12;540:62:2;;;:::i;:::-;;;;;;;;;;;;;;;;496:38;;;:::i;:::-;;;;;;;;;;;;;;;;;;;540:62;-1:-1:-1;;;540:62:2;:::o;496:38::-;531:3;496:38;:::o"
+		},
+		"gasEstimates": {
+			"creation": {
+				"codeDepositCost": "37000",
+				"executionCost": "115",
+				"totalCost": "37115"
+			},
+			"external": {
+				"Q112()": "166",
+				"RESOLUTION()": "191"
+			},
+			"internal": {
+				"decode(struct FixedPoint.uq112x112 memory)": "infinite",
+				"decode144(struct FixedPoint.uq144x112 memory)": "infinite",
+				"divuq(struct FixedPoint.uq112x112 memory,struct FixedPoint.uq112x112 memory)": "infinite",
+				"encode(uint112)": "infinite",
+				"encode144(uint144)": "infinite",
+				"fraction(uint256,uint256)": "infinite",
+				"mul(struct FixedPoint.uq112x112 memory,uint256)": "infinite",
+				"muli(struct FixedPoint.uq112x112 memory,int256)": "infinite",
+				"muluq(struct FixedPoint.uq112x112 memory,struct FixedPoint.uq112x112 memory)": "infinite",
+				"reciprocal(struct FixedPoint.uq112x112 memory)": "infinite",
+				"sqrt(struct FixedPoint.uq112x112 memory)": "infinite"
+			}
+		},
+		"methodIdentifiers": {
+			"Q112()": "3bf7a83e",
+			"RESOLUTION()": "552f888a"
+		}
+	},
+	"abi": [
+		{
+			"inputs": [],
+			"name": "Q112",
+			"outputs": [
+				{
+					"internalType": "uint256",
+					"name": "",
+					"type": "uint256"
+				}
+			],
+			"stateMutability": "view",
+			"type": "function"
+		},
+		{
+			"inputs": [],
+			"name": "RESOLUTION",
+			"outputs": [
+				{
+					"internalType": "uint8",
+					"name": "",
+					"type": "uint8"
+				}
+			],
+			"stateMutability": "view",
+			"type": "function"
+		}
+	]
+}

@@ -14,7 +14,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"TaralSwap/v2-periphery/libraries/SafeMath.sol": "SafeMath"
+			"TaralSwap/v2-periphery/libraries/FullMath.sol": "FullMath"
 		},
 		"evmVersion": "berlin",
 		"libraries": {},
@@ -28,11 +28,11 @@
 		"remappings": []
 	},
 	"sources": {
-		"TaralSwap/v2-periphery/libraries/SafeMath.sol": {
-			"keccak256": "0x747a796b08713d0cf365ba828c15d33bc782258566e8ab2cedd3faadcd620018",
+		"TaralSwap/v2-periphery/libraries/FullMath.sol": {
+			"keccak256": "0xc4ffcf28169f73fc9fdd1f82345d6d4fcccf3fd5aea83c133437c25e4e0950a9",
 			"urls": [
-				"bzz-raw://a3761703e0897ea0699201326ed599f6dc81e7878fa276f1956f1685b1b8d5f5",
-				"dweb:/ipfs/QmdYz8V5TDf3uRnEy1QN25fpWVgMM4f4CzboDA1pcK97g7"
+				"bzz-raw://c9257a47501005f0a648bc4801ef4abc33843681aaf03a6d0c43d46b69e37407",
+				"dweb:/ipfs/QmciHvDrqhxs5fjsrm9aNq29FZXpunMn17n2wWj83Zsh3B"
 			]
 		}
 	},

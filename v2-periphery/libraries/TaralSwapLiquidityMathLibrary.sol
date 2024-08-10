@@ -1,10 +1,9 @@
 pragma solidity >=0.5.0;
 
-import '@uniswap/v2-core/contracts/interfaces/IUniswapV2Pair.sol';
-import '@uniswap/v2-core/contracts/interfaces/IUniswapV2Factory.sol';
-import '@uniswap/lib/contracts/libraries/Babylonian.sol';
-import '@uniswap/lib/contracts/libraries/FullMath.sol';
-
+import 'https://github.com/theshivammaurya/Swap/blob/master/v2-core/interfaces/ITaralSwapV2Pair.sol';
+import 'https://github.com/theshivammaurya/Swap/blob/master/v2-core/interfaces/ITaralSwapV2Factory.sol';
+import './Babylonian.sol';
+import './FullMath.sol';
 import './SafeMath.sol';
 import './TaralSwapLibrary.sol';
 
@@ -104,8 +103,8 @@ library TaralSwapLiquidityMathLibrary {
         uint256 liquidityAmount
     ) internal view returns (uint256 tokenAAmount, uint256 tokenBAmount) {
         (uint256 reservesA, uint256 reservesB) = TaralSwapLibrary.getReserves(factory, tokenA, tokenB);
-        IUniswapV2Pair pair = IUniswapV2Pair(TaralSwapLibrary.pairFor(factory, tokenA, tokenB));
-        bool feeOn = IUniswapV2Factory(factory).feeTo() != address(0);
+        ITaralSwapV2Pair pair = ITaralSwapV2Pair(TaralSwapLibrary.pairFor(factory, tokenA, tokenB));
+        bool feeOn = ITaralSwapV2Factory(factory).feeTo() != address(0);
         uint kLast = feeOn ? pair.kLast() : 0;
         uint totalSupply = pair.totalSupply();
         return computeLiquidityValue(reservesA, reservesB, totalSupply, liquidityAmount, feeOn, kLast);
@@ -124,8 +123,8 @@ library TaralSwapLiquidityMathLibrary {
         uint256 tokenAAmount,
         uint256 tokenBAmount
     ) {
-        bool feeOn = IUniswapV2Factory(factory).feeTo() != address(0);
-        IUniswapV2Pair pair = IUniswapV2Pair(TaralSwapLibrary.pairFor(factory, tokenA, tokenB));
+        bool feeOn = ITaralSwapV2Factory(factory).feeTo() != address(0);
+        ITaralSwapV2Pair pair = ITaralSwapV2Pair(TaralSwapLibrary.pairFor(factory, tokenA, tokenB));
         uint kLast = feeOn ? pair.kLast() : 0;
         uint totalSupply = pair.totalSupply();
 

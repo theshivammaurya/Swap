@@ -28,13 +28,6 @@
 		"remappings": []
 	},
 	"sources": {
-		"@uniswap/v2-core/contracts/interfaces/IUniswapV2Pair.sol": {
-			"keccak256": "0x7c9bc70e5996c763e02ff38905282bc24fb242b0ef2519a003b36824fc524a4b",
-			"urls": [
-				"bzz-raw://85d5ad2dd23ee127f40907a12865a1e8cb5828814f6f2480285e1827dd72dedf",
-				"dweb:/ipfs/QmayKQWJgWmr46DqWseADyUanmqxh662hPNdAkdHRjiQQH"
-			]
-		},
 		"TaralSwap/v2-periphery/libraries/SafeMath.sol": {
 			"keccak256": "0x747a796b08713d0cf365ba828c15d33bc782258566e8ab2cedd3faadcd620018",
 			"urls": [
@@ -43,10 +36,17 @@
 			]
 		},
 		"TaralSwap/v2-periphery/libraries/TaralSwapLibrary.sol": {
-			"keccak256": "0xaa13f5da1b1735d4791d957bd312e24cbd819957637a75022e362981e95a2786",
+			"keccak256": "0xdee38a924130a1ba1fb02c82f3280b949c5b4c1cd27e4e2c3a4ba7ee651b6d63",
 			"urls": [
-				"bzz-raw://f3a915ce840f19aca26027c1db3a98f6cbdea24a686b40e24ea344c68f2de23e",
-				"dweb:/ipfs/QmYGFJrwZx7FTQCqrwg5rzuVP3GzNGrAk1aeJVFfw65ZWE"
+				"bzz-raw://d60cb3e20bdc33acfea26a31db118aeb6b9a4f526a3235a1f89fbe66ccb0cdd3",
+				"dweb:/ipfs/QmNQczVPgUsQcmnptsKHiDXzJZ8Dh8zcX3voqc4qHabdwc"
+			]
+		},
+		"https://github.com/theshivammaurya/Swap/blob/master/v2-core/interfaces/ITaralSwapV2Pair.sol": {
+			"keccak256": "0x5b04d462259fd55c51b6ab5e315ec3a650954db33f84207096e6f221d605086e",
+			"urls": [
+				"bzz-raw://86c8c46989bbc1581f30fc4b646e3386daca6ab5fcb5c27654bd398f25f6eecd",
+				"dweb:/ipfs/QmZxrArmn5J3urqERbF6o34qWQt6usTpfrXA2whmG9Y3iJ"
 			]
 		}
 	},

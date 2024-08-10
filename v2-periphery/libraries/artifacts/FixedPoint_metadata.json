@@ -4,7 +4,34 @@
 	},
 	"language": "Solidity",
 	"output": {
-		"abi": [],
+		"abi": [
+			{
+				"inputs": [],
+				"name": "Q112",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "RESOLUTION",
+				"outputs": [
+					{
+						"internalType": "uint8",
+						"name": "",
+						"type": "uint8"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
 		"devdoc": {
 			"methods": {}
 		},
@@ -14,7 +41,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"TaralSwap/v2-periphery/libraries/TaralSwapOracleLibrary.sol": "TaralSwapOracleLibrary"
+			"TaralSwap/v2-periphery/libraries/FixedPoint.sol": "FixedPoint"
 		},
 		"evmVersion": "berlin",
 		"libraries": {},
@@ -54,20 +81,6 @@
 			"urls": [
 				"bzz-raw://c9257a47501005f0a648bc4801ef4abc33843681aaf03a6d0c43d46b69e37407",
 				"dweb:/ipfs/QmciHvDrqhxs5fjsrm9aNq29FZXpunMn17n2wWj83Zsh3B"
-			]
-		},
-		"TaralSwap/v2-periphery/libraries/TaralSwapOracleLibrary.sol": {
-			"keccak256": "0xa88297ead13e9be5c8b60cd812ea399960c43b7603011278080476c7c6f7a6a0",
-			"urls": [
-				"bzz-raw://ea84e0f798ac67307e617f0285676835d62cc25eb4249639faff572abbf8a410",
-				"dweb:/ipfs/QmWzJF6CxC7RsTPQed2tCuh4UGHru6yCoTeC4LsLahhs46"
-			]
-		},
-		"https://github.com/theshivammaurya/Swap/blob/master/v2-core/interfaces/ITaralSwapV2Pair.sol": {
-			"keccak256": "0x5b04d462259fd55c51b6ab5e315ec3a650954db33f84207096e6f221d605086e",
-			"urls": [
-				"bzz-raw://86c8c46989bbc1581f30fc4b646e3386daca6ab5fcb5c27654bd398f25f6eecd",
-				"dweb:/ipfs/QmZxrArmn5J3urqERbF6o34qWQt6usTpfrXA2whmG9Y3iJ"
 			]
 		}
 	},

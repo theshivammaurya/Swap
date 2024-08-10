@@ -71,10 +71,17 @@
 			]
 		},
 		"TaralSwap/v2-periphery/libraries/TaralSwapLiquidityMathLibrary.sol": {
-			"keccak256": "0xf286a92fa163b141b7d151a9e0025dfdedeb734bd67818670b43662da0cff962",
+			"keccak256": "0xc4ed2dec0e3696abdeaf864ef6444a0ba61ca4c969aefd9ead0fd94a6307957a",
 			"urls": [
-				"bzz-raw://160eb50dadad7fc66f3db88198a901b6ed22f34fba6909207b834224a53c84d9",
-				"dweb:/ipfs/QmeSos9TSx6VYYkfNjAcJit9VcbpRGqvmDrS9GK3SwJAv7"
+				"bzz-raw://f76bd7b53de9db755fd2046837a58f84763448f97e1e65e1fe8cc763fcc07950",
+				"dweb:/ipfs/QmZjNbvwVxxmpyLbYYBwg1YWq2xs9KmhR5y5TShiWvxibg"
+			]
+		},
+		"https://github.com/theshivammaurya/Swap/blob/master/v2-core/interfaces/ITaralSwapV2Pair.sol": {
+			"keccak256": "0x5b04d462259fd55c51b6ab5e315ec3a650954db33f84207096e6f221d605086e",
+			"urls": [
+				"bzz-raw://86c8c46989bbc1581f30fc4b646e3386daca6ab5fcb5c27654bd398f25f6eecd",
+				"dweb:/ipfs/QmZxrArmn5J3urqERbF6o34qWQt6usTpfrXA2whmG9Y3iJ"
 			]
 		}
 	},

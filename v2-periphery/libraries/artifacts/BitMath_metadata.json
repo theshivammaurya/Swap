@@ -14,7 +14,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"TaralSwap/v2-periphery/libraries/SafeMath.sol": "SafeMath"
+			"TaralSwap/v2-periphery/libraries/BitMath.sol": "BitMath"
 		},
 		"evmVersion": "berlin",
 		"libraries": {},
@@ -28,11 +28,11 @@
 		"remappings": []
 	},
 	"sources": {
-		"TaralSwap/v2-periphery/libraries/SafeMath.sol": {
-			"keccak256": "0x747a796b08713d0cf365ba828c15d33bc782258566e8ab2cedd3faadcd620018",
+		"TaralSwap/v2-periphery/libraries/BitMath.sol": {
+			"keccak256": "0xde6135a0690fd110452874661699ac680ad31a632969f319bc283e1ea65a910a",
 			"urls": [
-				"bzz-raw://a3761703e0897ea0699201326ed599f6dc81e7878fa276f1956f1685b1b8d5f5",
-				"dweb:/ipfs/QmdYz8V5TDf3uRnEy1QN25fpWVgMM4f4CzboDA1pcK97g7"
+				"bzz-raw://7983f98af99277ecbcb1108640deaccced52006027c349cf12748a51b09b981b",
+				"dweb:/ipfs/QmVSBzNE24xmbShhNP6tkCSbAGgZ1TKs9vjQbsc5hgLSdw"
 			]
 		}
 	},

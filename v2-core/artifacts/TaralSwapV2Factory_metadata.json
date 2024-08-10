@@ -218,10 +218,10 @@
 	},
 	"sources": {
 		"TaralSwap/v2-core/TaralSwapV2ERC20.sol": {
-			"keccak256": "0xe4b914532d6321c0dbd30e0fad154f8a966faf1a29ad901d9e23e9e8aa9eb32a",
+			"keccak256": "0x65c9cfa8040331491533faf4e8e7feb3a688caa1ae1eb1cf9360a8950548dace",
 			"urls": [
-				"bzz-raw://f130b2dcc961c276bcc40c100c10d9cab6944e6ab4829c963ffc1f442f08f70e",
-				"dweb:/ipfs/QmXLY8LxhcKzVRWeYpHQdVvG8U8XV4BNNGNooVNHtRENSx"
+				"bzz-raw://cd07760c31f09b715613263d83233d6a4659187a577fbed6ef318a1a421ea7c4",
+				"dweb:/ipfs/QmNTPKBBCKPgRyivbcGHCnZgCfxUKpUZLsrVyNHWDdQ5Xt"
 			]
 		},
 		"TaralSwap/v2-core/TaralSwapV2Factory.sol": {
