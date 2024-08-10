@@ -1,0 +1,54 @@
+{
+	"compiler": {
+		"version": "0.6.6+commit.6c089d02"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [],
+		"devdoc": {
+			"methods": {}
+		},
+		"userdoc": {
+			"methods": {}
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"TaralSwap/v2-periphery/libraries/TaralSwapLibrary.sol": "TaralSwapLibrary"
+		},
+		"evmVersion": "berlin",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": true,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"@uniswap/v2-core/contracts/interfaces/IUniswapV2Pair.sol": {
+			"keccak256": "0x7c9bc70e5996c763e02ff38905282bc24fb242b0ef2519a003b36824fc524a4b",
+			"urls": [
+				"bzz-raw://85d5ad2dd23ee127f40907a12865a1e8cb5828814f6f2480285e1827dd72dedf",
+				"dweb:/ipfs/QmayKQWJgWmr46DqWseADyUanmqxh662hPNdAkdHRjiQQH"
+			]
+		},
+		"TaralSwap/v2-periphery/libraries/SafeMath.sol": {
+			"keccak256": "0x747a796b08713d0cf365ba828c15d33bc782258566e8ab2cedd3faadcd620018",
+			"urls": [
+				"bzz-raw://a3761703e0897ea0699201326ed599f6dc81e7878fa276f1956f1685b1b8d5f5",
+				"dweb:/ipfs/QmdYz8V5TDf3uRnEy1QN25fpWVgMM4f4CzboDA1pcK97g7"
+			]
+		},
+		"TaralSwap/v2-periphery/libraries/TaralSwapLibrary.sol": {
+			"keccak256": "0xaa13f5da1b1735d4791d957bd312e24cbd819957637a75022e362981e95a2786",
+			"urls": [
+				"bzz-raw://f3a915ce840f19aca26027c1db3a98f6cbdea24a686b40e24ea344c68f2de23e",
+				"dweb:/ipfs/QmYGFJrwZx7FTQCqrwg5rzuVP3GzNGrAk1aeJVFfw65ZWE"
+			]
+		}
+	},
+	"version": 1
+}

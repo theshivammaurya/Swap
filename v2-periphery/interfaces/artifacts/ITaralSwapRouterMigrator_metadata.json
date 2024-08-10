@@ -1,0 +1,74 @@
+{
+	"compiler": {
+		"version": "0.6.6+commit.6c089d02"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "token",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "amountTokenMin",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "amountETHMin",
+						"type": "uint256"
+					},
+					{
+						"internalType": "address",
+						"name": "to",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "deadline",
+						"type": "uint256"
+					}
+				],
+				"name": "migrate",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"methods": {}
+		},
+		"userdoc": {
+			"methods": {}
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"UniV2/v2-periphery/interfaces/ITaralSwapRouterMigrator.sol": "ITaralSwapRouterMigrator"
+		},
+		"evmVersion": "berlin",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": true,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"UniV2/v2-periphery/interfaces/ITaralSwapRouterMigrator.sol": {
+			"keccak256": "0x1e5d0c1b5fa182bdbd0f90e81c1331f57b3ede5fd846b69e2bb6188b931b1199",
+			"urls": [
+				"bzz-raw://7875c65a3753f52c2e738148cb0c46075e4e0c6efdf6f5669312aeb70f5cdc89",
+				"dweb:/ipfs/QmeCmVwcEuQnhngcB3F5R5paKZSeP5ytfXJKSziH8Y7BX9"
+			]
+		}
+	},
+	"version": 1
+}

@@ -1,0 +1,68 @@
+{
+	"compiler": {
+		"version": "0.5.16+commit.9c3226ce"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "sender",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "amount0",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "amount1",
+						"type": "uint256"
+					},
+					{
+						"internalType": "bytes",
+						"name": "data",
+						"type": "bytes"
+					}
+				],
+				"name": "TaralSwapV2Call",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"methods": {}
+		},
+		"userdoc": {
+			"methods": {}
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"TaralSwap/v2-core/interfaces/ITaralSwapV2Callee.sol": "ITaralSwapV2Callee"
+		},
+		"evmVersion": "berlin",
+		"libraries": {},
+		"optimizer": {
+			"enabled": true,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"TaralSwap/v2-core/interfaces/ITaralSwapV2Callee.sol": {
+			"keccak256": "0xcf2ace04795724459135fbdde6f678632754cb7b34977dbb509361fbfc77072d",
+			"urls": [
+				"bzz-raw://2fa92c3669557c6a7a8da5847fe9a2648ba2eac5afb54fd78af9a46f18db2e53",
+				"dweb:/ipfs/QmSnVBWEAYQdFT6ebzqY5bJWJFKr57LKALM2dZNgH8F7g8"
+			]
+		}
+	},
+	"version": 1
+}

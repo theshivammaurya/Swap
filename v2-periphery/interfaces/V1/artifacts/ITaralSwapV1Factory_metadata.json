@@ -1,0 +1,60 @@
+{
+	"compiler": {
+		"version": "0.6.6+commit.6c089d02"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "getExchange",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"methods": {}
+		},
+		"userdoc": {
+			"methods": {}
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"TaralSwap/v2-periphery/interfaces/V1/ITaralSwapV1Factory.sol": "ITaralSwapV1Factory"
+		},
+		"evmVersion": "berlin",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": true,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"TaralSwap/v2-periphery/interfaces/V1/ITaralSwapV1Factory.sol": {
+			"keccak256": "0xabfd19ba15f37828a75af8119499fca8e62f717181425faeac8934af0dc0bc16",
+			"urls": [
+				"bzz-raw://bbbf8c4108a476318757587e358a67ed4de71d9904dc604f6fe65aa7e35c5b95",
+				"dweb:/ipfs/QmQQj9w1ZGMe49WAHP1KRdceABF4JCSLTE4XVs96B2QqbQ"
+			]
+		}
+	},
+	"version": 1
+}

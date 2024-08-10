@@ -1,0 +1,74 @@
+{
+	"compiler": {
+		"version": "0.6.6+commit.6c089d02"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "token",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "amountTokenMin",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "amountETHMin",
+						"type": "uint256"
+					},
+					{
+						"internalType": "address",
+						"name": "to",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "deadline",
+						"type": "uint256"
+					}
+				],
+				"name": "migrate",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"methods": {}
+		},
+		"userdoc": {
+			"methods": {}
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"TaralSwap/v2-periphery/interfaces/ITaralSwapMigrator.sol": "ITaralSwapMigrator"
+		},
+		"evmVersion": "berlin",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": true,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"TaralSwap/v2-periphery/interfaces/ITaralSwapMigrator.sol": {
+			"keccak256": "0xdd236e9720c635abc85ef8f43679c209fcd3724f748f050f81558bbca78bcdce",
+			"urls": [
+				"bzz-raw://4e6943fd1e187b5759380488066a6c93313328f186e101120cb03db30b0529a4",
+				"dweb:/ipfs/QmSPBgmynKF4R9fYvPoMQLdCTw24Cgmop9TdJB62jwBnpw"
+			]
+		}
+	},
+	"version": 1
+}
